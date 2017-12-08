@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("aurora.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 80px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 100px 0px 40px 0px;
+}
+
+.login {
+  text-align: center;
+  color: white;
+  padding: 100px 0px 15px 0px;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+}
+
+.red-text {
+  clear: both;
+  color: darkred;
+}
+
+.signUp {
+  padding-top: 10px;
+  text-align: center;
+}
+
+a {
+  color: #2d4f86;
+}
+
+.signUp:visit {
+  color: #2d4f86;
+}
+
+.signUp:hover {
+  color: #2d4f86;
+}
+
+.signUp:active {
+  color: #2d4f86;
+}
+
+.header {
+  padding: 20px 0px;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+form { 
+  margin: 0 auto; 
+  width: 300px;
+  display: inline-block;
+}
+
+label {
+  color: white;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 3px;
+  width: 100%;
+  text-align: left;
+}
+
+.input {
+  border-radius: 1px;
+  width: 100%;
+}
+
+.navbar {
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a.nav {
+  color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  padding-right: 30px;
+}
+
+.nav:visited {
+  color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.nav:hover {
+  color: white;
+  text-decoration: underline;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.nav:active {
+  color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#search {
+  padding: 15px;
+  margin: 0 auto;
+}
+.table { 
+  margin: 0 auto;
+}
+
+th {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+tr:hover td {
+  background: rgba(255,255,255, 0.4);
+}
+
+.transparentBG {
+  background-color: rgba(255,255,255, 0.5);
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.chartHeader {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+.chartNum {
+  color: blue;
+  font-family: 'Ramabhadra', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.line {
+  border-bottom: 7px solid rgba(255,255,255, .2);
+  margin: 15px auto;
+  width: 80%;
+}
+
+.patientInfoHeader {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  font-size: 20px 75%;
+}
+
+.patientInfo {
+  padding-top: 30px;
+  margin: 0 auto;
+  font-size: 100%;
+}
+
+.formHeader {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+input, select, textarea {
+  font-family: 'Archivo', sans-serif;
+}
+
+.whiteBG {
+  background-color: rgba(255,255,255, 0.3);
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+ 
+.staffInfo {
+  margin: 0 auto;
+  font-size: 16px;
+  text-align:left;
+}

@@ -1,0 +1,39 @@
+<div class="container">
+  <ul class="text-center">
+    <li class="navbar">
+      <a ui-sref="patients" class="nav">Patients</a>
+    </li>
+    <li class="navbar">
+      <a ui-sref="logout" class="nav">Logout</a>
+    </li>
+  </ul>
+  <div class="whiteBG" style="padding-bottom: 10px">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="header">Staff Info</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <p class="staffInfo">
+          <strong>First Name: </strong>{{ staff.firstName }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <p class="staffInfo">
+          <strong>Last Name: </strong>{{ staff.lastName }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <p class="staffInfo">
+          <strong>Email: </strong>{{ staff.email }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <button class="btn btn-default btn-sm" ui-sref="staffUpdate({id: staff.id})">Update</button>
+        <button class="btn btn-danger btn-sm" ng-click="deleteStaff()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

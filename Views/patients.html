@@ -1,0 +1,39 @@
+<div class="container" style="padding-bottom: 30px">
+  <ul class="text-center">
+    <li class="navbar">
+      <a ui-sref="patients" class="nav">Patients</a>
+    </li>
+    <li class="navbar">
+      <a ui-sref="logout" class="nav">Logout</a>
+    </li>
+  </ul>
+  <div class="col-md-6 col-md-offset-3">
+    <h1 class="header">Patients</h1>
+  </div>
+  <div class="col-sm-10" id="search">
+    <input type="text" class="form-control" placeholder="Search for Patients..." ng-model="searchText">
+  </div>
+  <div class="col-sm-2" id="search">
+    <button class="btn btn-default" ui-sref="patientsCreate()">New Patient</button>
+  </div>
+  <div class="col-sm-12">
+    <table class="table table">
+      <tr class="transparentBG">
+        <th>#</th>
+        <th>CHART NO.</th>
+        <th>LAST NAME</th>
+        <th>FIRST NAME</th>
+        <th>MIDDLE NAME</th>
+        <th>DOB</th>
+      </tr>
+      <tr class="transparentBG" ng-repeat="patient in patients | filter:searchText | orderBy:'lastName'" ui-sref="patient({id: patient.id})">
+        <td>{{ $index + 1 }}</td>
+        <td>{{ patient.chartNo | uppercase }}</td>
+        <td>{{ patient.lastName | uppercase }}</td>
+        <td>{{ patient.firstName | uppercase }}</td>
+        <td>{{ patient.middleName | uppercase }}</td>
+        <td>{{ patient.dob | date: 'MM/dd/yyyy'}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

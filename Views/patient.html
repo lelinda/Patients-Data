@@ -1,0 +1,152 @@
+<div class="container" style="padding-bottom: 30px">
+  <ul class="text-center">
+    <li class="navbar">
+      <a ui-sref="patients" class="nav">Patients</a>
+    </li>
+    <li class="navbar">
+      <a ui-sref="logout" class="nav">Logout</a>
+    </li>
+  </ul>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 class="header">
+        <strong>{{ patient.lastName | uppercase }}, {{ patient.middleName | uppercase }} {{ patient.firstName | uppercase }}</strong>
+      </h1>
+    </div>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h3 class="chartHeader">Chart No.</h3>
+    </div>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h4 class="chartNum">
+        <strong>{{ patient.chartNo | uppercase }}</strong>
+      </h4>
+    </div>
+  </div>
+  <p class="line"></p>
+  <div class="transparentBG" style="padding-bottom: 10px">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="patientInfoHeader">
+          <strong>Demographics</strong>
+        </h4>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>First Name: </strong>{{ patient.firstName }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>Middle Name: </strong>{{ patient.middleName }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>Last Name: </strong>{{ patient.lastName }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-3">
+        <p>
+          <strong>DOB: </strong>{{ patient.dob | date: 'MM/dd/yyyy' }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p>
+          <strong>Gender: </strong>{{ patient.gender }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p>
+          <strong>Phone: </strong>{{ patient.phone }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9 col-sm-offset-3">
+        <p>
+          <strong>Email Address: </strong>{{ patient.email }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="patientInfoHeader">
+          <strong>Primary Address</strong>
+        </h4>
+      </div>
+      <div class="col-sm-9">
+        <p class="patientInfo">
+          <strong>Street: </strong>{{ patient.street }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-3">
+        <p>
+          <strong>City: </strong>{{ patient.city }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p>
+          <strong>State: </strong>{{ patient.state }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p>
+          <strong>Zip: </strong>{{ patient.zip }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="patientInfoHeader">
+          <strong>Background Info</strong>
+        </h4>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>Marital Status: </strong>{{ patient.maritalStatus }}</p>
+      </div>
+      <div class="col-sm-5">
+        <p class="patientInfo">
+          <strong>Preferred Language: </strong>{{ patient.prefLang }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-3">
+        <p>
+          <strong>Ethnicity: </strong>{{ patient.ethnicity }}</p>
+      </div>
+      <div class="col-sm-5">
+        <p>
+          <strong>Race: </strong>{{ patient.race }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="patientInfoHeader">
+          <strong>Emergency Contact</strong>
+        </h4>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>Name: </strong>{{ patient.emergencyName }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>Phone: </strong>{{ patient.emergencyNum }}</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="patientInfo">
+          <strong>Relationship: </strong>{{ patient.relationship }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="patientInfoHeader">
+          <strong>Notes</strong>
+        </h4>
+      </div>
+      <div class="col-sm-9">
+        <p class="patientInfo">{{ patient.notes | uppercase }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <button class="btn btn-danger btn-sm pull-right" ng-click="deletePatient()">Delete</button>
+        <button class="btn btn-default btn-sm pull-right" ui-sref="patientsUpdate({id: patient.id})">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
